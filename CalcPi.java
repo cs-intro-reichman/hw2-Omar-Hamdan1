@@ -1,20 +1,21 @@
-// Computes an approximation of PI.
 public class CalcPi {
     public static void main(String[] args) {
-        int times = Integer.parseInt(args[0]);
-        double piApproximation = 0.0;
-        double numerator = 3.0;
-        for (int i = 0; i < times; i++) {
-            // We subtract the even terms and add the odd terms
+        int terms = Integer.parseInt(args[0]);  // number of terms to use
+        double sum = 0.0;
+
+        for (int i = 0; i < terms; i++) {
+            double denominator = 2.0 * i + 1.0;
+
             if (i % 2 == 0) {
-                piApproximation -= 1.0/numerator;
+                sum += 1.0 / denominator;
             } else {
-                piApproximation += 1.0/numerator;
+                sum -= 1.0 / denominator;
             }
-            numerator += 2.0;
         }
-        piApproximation *= 4;
+
+        double piApprox = 4 * sum;
+
         System.out.println("pi according to Java: " + Math.PI);
-        System.out.println("pi, approximated: " + piApproximation);
-	}
+        System.out.println("pi, approximated: " + piApprox);
+    }
 }

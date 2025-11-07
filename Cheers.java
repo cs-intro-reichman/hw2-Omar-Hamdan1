@@ -24,7 +24,7 @@ public class Cheers {
                         System.out.println("Give me an " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");
                 }
                 else {
-                        System.out.println("Give me a " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");      
+                        System.out.println("Give me a  " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");      
                 }
         }
         
