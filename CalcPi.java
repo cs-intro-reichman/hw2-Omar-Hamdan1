@@ -17,6 +17,6 @@ public class CalcPi {
         double piApprox = 4 * sum;
 
         System.out.println("pi according to Java: " + Math.PI);
-        System.out.printf("pi, approximated:%6.16f%n", piApprox); // <-- EXACT SPACING
+        System.out.printf("pi, approximated: " + piApprox); // <-- EXACT SPACING
     }
 }

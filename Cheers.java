@@ -10,12 +10,8 @@ public class Cheers {
         public static void main(String[] args) {
         String cheer = args[0];
 	int times = Integer.parseInt(args[1]);
-
-        // Input validation
-        if (cheer.length() == - 1 || cheer.length() == 0 || times < 1) {
-                System.out.println("No cheer provided");
-                return;
-        }
+        
+        // Convert the cheer string to uppercase to handle both cases
         cheer = cheer.toUpperCase();
 
         // Loop to print the cheer of every character in the string
